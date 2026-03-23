@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Positivus</title>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
+        #body {
+            margin: auto;
+            max-width: 1920px;
+        }
+
         body {
-            margin: 10px 8%;
+            margin: 20px 6%;
             font-family: "Space Grotesk", sans-serif;
         }
 
-        /* HEADER */
-
-        .header {
+        div.header {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -27,379 +29,622 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            font-size: 28px;
+            font-size: 46px;
         }
 
-        .menu_container {
+        div.container {
             display: flex;
-            gap: 40px;
+            gap: 45px;
             align-items: center;
+            font-size: 20px;
         }
 
-        .request {
+        div.request {
             border: 2px solid black;
-            border-radius: 10px;
+            border-radius: 13px;
             padding: 18px 28px;
         }
 
-        .mobile_menu {
-            display: none;
+        div.mobile_menu {
+            width: 5%;
         }
 
-        /* CONTENT */
+        /*content_1*/
 
-        .content {
+        div.content_1 {
             display: flex;
             align-items: center;
-            margin-top: 40px;
+            margin-top: 30px;
         }
 
-        .content_text {
-            width: 50%;
+        div.title {
+            letter-spacing: 4px;
         }
 
-        .content_text h1 {
+        h1.content_1_title {
             font-size: 65px;
         }
 
-        .content_text p {
+        p.intro {
             font-size: 20px;
             line-height: 1.5;
             letter-spacing: 1px;
         }
 
-        .content_text button {
+        button.book_consultation {
             background: black;
             color: white;
+            font-size: 23px;
+            border-radius: 15px;
+            margin-top: 30px;
+            padding: 28px 40px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        div.content_image {
+            margin: auto;
+            width: 100%;
+        }
+
+        /*company_1*/
+
+        div.company_1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5% 0px;
+        }
+
+        div.company_logo_1 {
+            align-items: center;
+        }
+
+        div.company_logo_1.spacial {
+            padding-bottom: 4px;
+        }
+
+        img.company_logo_1 {
+            width: 110%;
+        }
+
+        /*company_2*/
+
+        img.company_logo_2 {
+            width: 100%;
+        }
+
+        div.company_logo_2 {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        /*service*/
+
+        div.service {
+            display: flex;
+            gap: 50px;
+            height: 100px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        div.service_title {
+            background-color: #B9FF66;
+            font-size: 40px;
+            font-weight: 500;
+            text-align: center;
+            padding: 2px 8px;
+            border-radius: 10px;
+        }
+
+        div.service_intro {
             font-size: 20px;
-            border-radius: 15px;
-            margin-top: 20px;
-            padding: 20px 35px;
-        }
-
-        .content_image img {
-            width: 100%;
-        }
-
-        /* COMPANY LOGOS */
-
-        .company {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 70px;
-        }
-
-        .company img {
-            width: 120px;
-        }
-
-        /* SERVICES TITLE */
-
-        .services_intro {
-            display: flex;
-            gap: 30px;
-            margin-top: 100px;
-        }
-
-        .services_intro h2 {
-            background: #B9FF66;
-            padding: 5px 2px;
-        }
-
-        .services_intro p {
-            line-height: 1.5;
-        }
-
-        /* SERVICE FRAME */
-
-        .services {
-            margin-top: 50px;
-        }
-
-        .service_six {
-            display: flex;
-            gap: 30px;
-            margin-bottom: 30px;
-        }
-
-        .frame {
-            flex: 1;
-            border: 2px solid black;
-            border-radius: 20px;
-            padding: 30px;
-            display: flex;
-            justify-content: space-between;
+            width: 770px;
             align-items: center;
         }
 
-        .white_frame {
-            background: #F3F3F3;
-        }
+        /*frame*/
 
-        .green_frame {
-            background: #B9FF66;
-        }
-
-        .gray_frame {
-            background: #191A23;
-            color: white;
-        }
-
-        .frame_text h3 {
-            font-size: 28px;
-        }
-
-        .learn_more {
-            margin-top: 40px;
-            display: flex;
+        div.service_container {
+            margin: auto;
             align-items: center;
-            gap: 10px;
+            justify-content: center;
         }
 
-        /* CTA */
-
-        div.Illustration_cta img {
-            width: 100%;
+        div.frame_card {
+            margin: auto;
+            align-items: center;
+            justify-content: center;
         }
 
-        div.Illustration_cta {
+        div.frame {
+            margin: auto;
             display: flex;
+            gap: 50px;
             justify-content: space-between;
-            margin-block: 40px;
+        }
+
+        div.card_line2_white,
+        div.card_line1_white {
+            display: inline-block;
+            font-size: 32px;
+            font-weight: 600;
+            border-radius: 10px;
+            padding: 2px 5px;
+            background-color: #ffffff;
+        }
+
+        div.card_line1_green,
+        div.card_line2_green {
+            display: inline-block;
+            font-size: 32px;
+            font-weight: 600;
+            border-radius: 10px;
+            padding: 2px 5px;
+            background-color: #B9FF66;
+        }
+
+        div.learn_more.white {
+            color: #ffffff;
+        }
+
+        div.card {
+            display: flex;
+            border-radius: 50px;
+            width: 700px;
+            height: 250px;
+            padding: 60px;
+            justify-content: space-between;
+            box-shadow: 0px 5px;
+            margin: auto;
+            align-items: center;
+            margin-bottom: 5%;
+        }
+
+        div.card.white_1,
+        div.card.white_4 {
             background-color: #F3F3F3;
-            border-radius: 55px;
-            padding: 5px 80px;
-            align-items: center;
-
+            border: 2px solid black;
         }
 
-        div.Illustration_cta h1 {
-            font-size: 35px;
-            line-height: 1.2;
-
+        div.card.green_2,
+        div.card.green_5 {
+            background-color: #B9FF66;
+            border: 2px solid black;
         }
 
-        div.Illustration_cta p {
-            font-size: 18px;
-        }
-
-        div.Illustration_cta button {
+        div.card.black_3,
+        div.card.black_6 {
             background-color: #191A23;
-            color: white;
+            border: 2px solid black;
+        }
+
+        div.card_illus {
+            display: flex;
+            width: 190px;
+            gap: 12px;
+        }
+
+        div.learn_more {
             font-size: 18px;
+            margin: auto 0px;
+            width: 70%;
+            align-items: center;
+        }
+
+        div.card_img {
+            width: 45px;
+        }
+
+        div.card_intro {
+            display: flex;
+            width: 52%;
+            height: 250px;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        div.card_img_illus {
+            width: 40%;
+        }
+
+        div.frame_gray_4 {
+            display: flex;
+            background-color: #F3F3F3;
+            border-radius: 50px;
+            width: auto;
+            height: 260px;
+            padding: 60px;
+            justify-content: space-between;
+        }
+
+        div.frame_gray_4_illus {
+            width: 380px;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            margin-top: -80px;
+        }
+
+        div.frame_gray_4_title {
+            font-size: 37px;
+            font-weight: 600;
+        }
+
+        div.frame_gray_4_intro {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        button.get_free {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-size: 23px;
+            font-weight: 50;
             border-radius: 15px;
-            margin-top: 18px;
-            padding: 20px 30px;
+            padding: 25px 35px;
             letter-spacing: 1px;
         }
 
-        div.cta_text {
-            width: 50%;
+        /*hide*/
+
+        div.mobile_menu {
+            display: none;
         }
 
-        /* RESPONSIVE */
+        div.company_2 {
+            display: none;
+            width: 85%;
+            align-items: center;
+            justify-self: center;
+            margin-top: auto;
+        }
 
-        @media screen and (max-width:1310px) {
+        div.content_2 {
+            display: none;
+            align-items: center;
+            width: 100%;
+        }
 
-            .menu_container {
-                display: none;
+        /*mobile size*/
+
+        @media screen and (max-width:1080px) {
+
+            div.mobile_menu {
+                width: 10%
             }
 
-            .mobile_menu {
+            h1.logo {
+                width: 5vw;
+                font-size: 100%;
+            }
+
+            div.logo {
+                font-size: 5vw;
+            }
+
+            div.company_2 {
                 display: block;
             }
 
-        }
-
-        @media screen and (max-width:700px) {
-
-            .content {
-                flex-direction: column;
+            div.content_2 {
+                display: block;
             }
 
-            .content_text {
-                width: 100%;
+            div.book_consultation_2 {
+                display: block;
+                background-color: black;
+                color: #ffffff;
+                border-radius: 2.5vw;
+                padding: 1px 30px;
+                margin-top: 50px;
+                text-align: center;
             }
 
-            .content_image {
-                width: 100%;
-                margin-top: 30px;
-                order: 1;
+            h1.content_2_title {
+                font-size: 9.5vw;
             }
 
-            .service_six {
-                flex-direction: column;
+            div.content_image {
+                width: 80vw;
             }
 
-            .company {
-                flex-wrap: wrap;
-                gap: 30px;
-                justify-content: center;
-            }
+            /*hide*/
 
-            div.Illustration_cta img {
+            div.service {
                 display: none;
             }
 
-            div.Illustration_cta {
-                flex-direction: column;
+            div.service_container {
+                display: none;
+            }
+
+            div.service-img {
+                display: none;
+            }
+
+            div.service_intro {
+                display: none;
+            }
+
+            div.company_logo_1 {
+                display: none;
+            }
+
+            div.content_1 {
+                display: none;
+            }
+
+            div.book_consultation {
+                display: none;
+            }
+
+            div.frame.gray_4 {
+                display: none;
+            }
+
+            div.frame_card_4 {
+                display: none;
+            }
+
+        }
+
+        /*one resize*/
+
+        @media screen and (max-width:1310px) {
+            div.container {
+                display: none;
+            }
+
+            div.mobile_menu {
+                display: block;
+            }
+
+            p.service_intro {
+                font-size: 18px;
+            }
+
+            div.company {
+                gap: 50px;
+            }
+
+            div.frame {
+                display: block;
             }
         }
     </style>
+
 </head>
 
 <body>
+    <div id="body">
+        <div>
+            <div class="header">
 
-    <div class="header">
-
-        <div class="logo">
-            <h1>
-                <img src="images/Vector.png" width="30">
-                Positivus
-            </h1>
-        </div>
-
-        <div class="menu_container">
-            <div class="menu_aboutus">About us</div>
-            <div class="menu_services">Services</div>
-            <div class="menu_usecases">Use Cases</div>
-            <div class="menu_pricing">Pricing</div>
-            <div class="menu_blog">Blog</div>
-
-            <div class="request">Request a quote</div>
-        </div>
-
-        <div class="mobile_menu">☰</div>
-
-    </div>
-
-
-    <div class="content">
-
-        <div class="content_text">
-
-            <h1>Navigating the<br>digital landscape<br>for success</h1>
-
-            <p>
-                Our digital marketing agency helps businesses
-                grow and succeed online through a range of
-                services including SEO, PPC, social media
-                marketing, and content creation.
-            </p>
-
-            <button>Book a consultation</button>
-
-        </div>
-
-        <div class="content_image"><img src="images/Illustration.png"></div>
-
-    </div>
-
-    <div class="company">
-        <div><img src="images/amazon.png" alt="amazon"></div>
-        <div><img src="images/dribbble.png" alt="dribbble"></div>
-        <div><img src="images/hubspot.png" alt="hubspot"></div>
-        <div><img src="images/notion.png" alt="notion"></div>
-        <div><img src="images/netflix.png" alt="netflix"></div>
-        <div><img src="images/zoom.png" alt="zoom"></div>
-    </div>
-
-
-    <div class="services_intro">
-
-        <h2>Services</h2>
-
-        <p>
-            At our digital marketing agency, we offer a range of services
-            to help businesses grow and succeed online.
-            These services include:
-        </p>
-
-    </div>
-
-    <div class="services">
-
-        <div class="service_six">
-            <div class="frame white_frame">
-                <div class="frame_text">
-                    <h3>Search engine<br>optimization</h3>
-                    <div class="learn_more"><img src="images/Icon_black.png" width="25">Learn more</div>
-
+                <div class="logo">
+                    <h1 class="logo"><img src="images/Vector.png" alt="positivus_logo" width="100%"> Positivus
+                    </h1>
                 </div>
-
-                <img src="images/Search engine.png" width="140">
+                <div class="container">
+                    <div class="menu_aboutus">About us</div>
+                    <div class="menu_services">Services</div>
+                    <div class="menu_usecases">Use Cases</div>
+                    <div class="menu_pricing">Pricing</div>
+                    <div class="menu_blog">Blog</div>
+                    <div class="request">Request a quote</div>
+                </div>
+                <div class="mobile_menu"><img src="images/burger_menu.png" alt="mobile_menu" width="100%"></div>
             </div>
 
 
-            <div class="frame green_frame">
-                <div class="frame_text">
-                    <h3>Pay-per-click<br>advertising</h3>
-                    <div class="learn_more"><img src="images/Icon_black.png" width="25">Learn more</div>
-
+            <div class="content_1">
+                <div class="title">
+                    <h1 class="content_1_title">Navigating the <br />digital landscape <br />for success</h1>
+                    <p class="intro">Our digital marketing agency helps businessesgrow and succeed online through a
+                        range of services including SEO, PPC, social media marketing,and content creation.
+                    </p>
+                    <button class="book_consultation">Book a consultation</button>
                 </div>
-
-                <img src="images/Pay-per-click.png" width="140">
-            </div>
-
-        </div>
-
-
-        <div class="service_six">
-            <div class="frame gray_frame">
-                <div class="frame_text">
-                    <h3>Social Media<br>Marketing</h3>
-                    <div class="learn_more"><img src="images/Icon_white.png" width="25">Learn more</div>
+                <div class="content_image">
+                    <img src="images/Illustration.png" alt="content_image" width="100%">
                 </div>
-                <img src="images/Social Media.png" width="140">
             </div>
 
 
-            <div class="frame white_frame">
-                <div class="frame_text">
-                    <h3>Email<br>Marketing</h3>
-                    <div class="learn_more"><img src="images/Icon_black.png" width="25">Learn more</div>
+            <div class="content_2">
+                <div class="title_2">
+                    <h1 class="content_2_title">Navigating the <br />digital landscape <br />for success</h1>
+                    <div class="content_image">
+                        <img src="images/Illustration.png" alt="content_image" width="100%">
+                    </div>
+                    <p class="intro">Our digital marketing agency helps businesses grow and succeed online through a
+                        range of services including SEO, PPC, social media marketing, and content creation.
+                    </p>
+                    <div class="book_consultation"><button class="book_consultation">Book a consultation</button></div>
                 </div>
-                <img src="images/Email Marketing.png" width="140">
-            </div>
-
-        </div>
-
-
-        <div class="service_six">
-            <div class="frame green_frame">
-                <div class="frame_text">
-                    <h3>Content<br>Creation</h3>
-                    <div class="learn_more"><img src="images/Icon_black.png" width="25">Learn more</div>
+                <div class="book_consultation_2">
+                    <p class="book_consultation_2">Book a consultation</p>
                 </div>
-                <img src="images/Content Creation.png" width="140">
             </div>
 
 
-            <div class="frame gray_frame">
-                <div class="frame_text">
-                    <h3>Analytics &<br>Tracking</h3>
-                    <div class="learn_more"><img src="images/Icon_white.png" width="25">Learn more</div>
+            <div class="company_1">
+                <div class="company_logo_1"><img class="company_logo_1" src="images/amazon.png" alt="Amazon"></div>
+                <div class="company_logo_1 spacial"><img class="company_logo_1" src="images/dribbble.png" alt="Lnillle">
                 </div>
-                <img src="images/Analytics_Tracking.png" width="140">
+                <div class="company_logo_1"><img class="company_logo_1" src="images/hubspot.png" alt="Hubspot"></div>
+                <div class="company_logo_1"><img class="company_logo_1" src="images/notion.png" alt="Notion"></div>
+                <div class="company_logo_1"><img class="company_logo_1" src="images/netflix.png" alt="Netflix"></div>
+                <div class="company_logo_1"><img class="company_logo_1" src="images/zoom.png" alt="Zoom"></div>
             </div>
 
-        </div>
 
-    </div>
+            <div class="company_2">
+                <div class="company_logo_2"><img class="company_logo_2" src="images/amazon.png" alt="Amazon"
+                        width="49%"><img class="company_logo_2" src="images/dribbble.png" alt="Lnillle" width="49%">
+                </div>
 
-    <div class="Illustration_cta">
-        <div class="cta_text">
-            <h1>Let’s make things happen</h1>
-            <p>
-                Contact us today to learn more about how our digital marketing services can help your business grow and
-                succeed online.
-            </p>
-            <button class="book_button">Get your free proposal</button>
-        </div>
+                <div class="company_logo_2"><img class="company_logo_2" src="images/hubspot.png" alt="Hubspot"
+                        width="49%"><img class="company_logo_2" src="images/notion.png" alt="Notion" width="49%">
+                </div>
 
-        <div class="image">
-            <img src="images/Illustration_cta.png" alt="illustration" width="100%">
+                <div class="company_logo_2"><img class="company_logo_2" src="images/netflix.png" alt="Netflix"
+                        width="49%"><img class="company_logo_2" src="images/zoom.png" alt="Zoom" width="49%"></div>
+            </div>
+
+
+            <div class="service">
+                <div class="service_title">Services</div>
+                <div class="service_intro">
+                    At our digital marketing agency, we offer a range of services to <br>
+                    help businesses grow and succeed online. These services include:
+                </div>
+            </div>
+
+
+            <div class="service_container">
+                <div class="frame_card">
+                    <div class="frame card1">
+                        <div class="card white_1">
+                            <div class="card_intro">
+                                <div>
+                                    <div class="card_line1_green">Search engine</div>
+                                    <div class="card_line2_green">optimization</div>
+                                </div>
+                                <div class="card_illus">
+                                    <div class="card_img"><img src="images/Icon_black.png" alt="arrow" width="100%">
+                                    </div>
+                                    <div class="learn_more">Learn more</div>
+                                </div>
+                            </div>
+                            <div class="card_img_illus">
+                                <img src="images/Search engine.png" alt="search illus" width="100%">
+                            </div>
+                        </div>
+
+
+                        <div class="card green_2">
+                            <div class="card_intro">
+                                <div>
+                                    <div class="card_line1_white">Pay-per-click</div>
+                                    <div class="card_line2_white">advertising</div>
+                                </div>
+                                <div class="card_illus">
+                                    <div class="card_img"><img src="images/Icon_black.png" alt="arrow" width="100%">
+                                    </div>
+                                    <div class="learn_more">Learn more</div>
+                                </div>
+
+                            </div>
+                            <div class="card_img_illus">
+                                <img src="images/Pay-per-click.png" alt="seleting" width="100%">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="frame card2">
+                        <div class="card black_3">
+                            <div class="card_intro">
+                                <div>
+                                    <div class="card_line1_white">Social Media</div>
+                                    <div class="card_line2_white">Marketing</div>
+                                </div>
+                                <div class="card_illus">
+                                    <div class="card_img"><img src="images/Icon_white.png" alt="arrow" width="100%">
+                                    </div>
+                                    <div class="learn_more white">Learn more</div>
+                                </div>
+
+                            </div>
+                            <div class="card_img_illus">
+                                <img src="images/Social Media.png" alt="window2" width="100%">
+                            </div>
+                        </div>
+
+
+                        <div class="card white_4">
+                            <div class="card_intro">
+                                <div>
+                                    <div class="card_line1_green">Email</div>
+                                    <div class="card_line2_green">Marketing</div>
+                                </div>
+                                <div class="card_illus">
+                                    <div class="card_img"><img src="images/Icon_black.png" alt="arrow" width="100%">
+                                    </div>
+                                    <div class="learn_more">Learn more</div>
+                                </div>
+
+                            </div>
+                            <div class="card_img_illus">
+                                <img src="images/Email Marketing.png" alt="messages" width="100%">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="frame card3">
+                        <div class="card green_5">
+                            <div class="card_intro">
+                                <div>
+                                    <div class="card_line1_white">Content</div>
+                                    <div class="card_line2_white">Creation</div>
+                                </div>
+                                <div class="card_illus">
+                                    <div class="card_img"><img src="images/Icon_black.png" alt="arrow" width="100%">
+                                    </div>
+                                    <div class="learn_more">Learn more</div>
+                                </div>
+
+                            </div>
+                            <div class="card_img_illus">
+                                <img src="images/Content Creation.png" alt="window" width="100%">
+                            </div>
+                        </div>
+
+
+                        <div class="card black_6">
+                            <div class="card_intro">
+                                <div>
+                                    <div class="card_line1_green">Analytics and </div>
+                                    <div class="card_line2_green">Tracking</div>
+                                </div>
+                                <div class="card_illus">
+                                    <div class="card_img"><img src="images/Icon_white.png" alt="arrow" width="100%">
+                                    </div>
+                                    <div class="learn_more white">
+                                        <p>Learn more</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card_img_illus">
+                                <img src="images/Analytics_Tracking.png" alt="analytics" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="frame_card_4">
+                <div class="frame_gray_4">
+                    <div class="frame_gray_4_intro">
+                        <div class="frame_gray_4_title">Let's make things happen</div>
+                        <div class="learn_more">Contact us today to learn more about how our digital marketing services
+                            can help your business grow and succeed online.</div>
+                        <div><button class="get_free">Get your free propasal</button></div>
+                    </div>
+                    <div class="frame_gray_4_illus"><img src="images/Illustration_cta.png" alt="CTA" width="100%"></div>
+                </div>
+            </div>
         </div>
     </div>
 
