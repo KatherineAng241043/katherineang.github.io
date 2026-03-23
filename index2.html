@@ -9,10 +9,12 @@
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=VT323&display=swap');
 
         body {
-            background-color: rgb(251, 243, 223);
+            background-image: url('Personal Page/images/city.jpg');
             margin: 0px;
             font-family: "VT323", monospace;
         }
+
+        /* bar */
 
         div.bar {
             background-color: rgb(0, 95, 2);
@@ -22,8 +24,8 @@
         }
 
         h1.logo {
-            color: antiquewhite;
-            font-size: 2.5vw;
+            color: #faebd7;
+            font-size: 40px;
             font-family: "Bebas Neue", sans-serif;
         }
 
@@ -31,25 +33,29 @@
             display: flex;
             justify-content: space-around;
             gap: 0.5vw;
-            width: 7vw;
+            width: 100px;
             align-items: center;
         }
 
-        div.intro {
-            font-family: "Noto Serif", serif;
+        /* intro */
+
+        div.intro_context {
             align-items: center;
             justify-content: center;
-            margin-top: 2%;
+            margin-top: 10px;
+            font-family: "Noto Serif", serif;
         }
 
         div.user {
-            width: 9vw;
+            width: 140px;
             align-items: center;
             margin: auto;
+            margin-top: 50px;
+            margin-bottom: -20px;
         }
 
         img.user {
-            margin-top: 50px;
+            border-radius: 1000px;
         }
 
         div.intro {
@@ -59,63 +65,55 @@
             text-align: center;
         }
 
-        h3.name {
-            font-size: 2.5vw;
-            margin-top: -0.5%;
+        h3.intro_name {
+            font-size: 40px;
         }
 
-        h4.subject {
+        h4.intro_subject {
             font-weight: 500;
-            font-size: 1.5vw;
-            margin-top: -2%;
+            font-size: 25px;
+            margin-top: -30px;
         }
 
-        p.introduct {
-            font-size: 1vw;
+        p.intro_introduct {
+            font-size: 16px;
             width: 50vw;
             text-align: center;
-            align-items: center;
             margin: auto;
-            justify-content: center;
             line-height: 1.4;
+            margin-top: -20px;
         }
+
+        /* assignment */
 
         div.assignment_container {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 2.5% 0px;
+            justify-content: center;
+            margin: 20px 0px;
         }
 
         div.assignment {
-            background-color: #FFFFFF;
-            border-radius: 0.7vw;
-            display: block;
-            padding: 2% 5%;
-            margin: 0px 8%;
-            align-items: center;
+            background-color: antiquewhite;
+            border-radius: 10px;
+            padding: 20px 30px;
+            margin: 20px;
         }
 
-        div.assignment.week2 {
-            margin: 0px -7%;
-        }
-
-        div.time {
+        div.date {
             display: flex;
-            gap: 5%;
-            width: 100%;
-            align-items: center;
+            gap: 5px;
+            width: 250px;
+            margin: auto;
             justify-content: center;
         }
 
         div.celendar {
-            width: 25px;
+            width: 30px;
         }
 
         div.week {
-            font-size: 2.5vw;
-            justify-content: space-around;
-            flex-direction: column;
+            font-size: 40px;
+            width: 120px;
         }
 
         div.exelink {
@@ -126,30 +124,84 @@
 
         hr {
             border: none;
-            border-top: 2px solid #ccc;
-            width: 16vw;
-            margin: -1px 0;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+            border-top: 3px solid #ccc;
+            width: 100%;
         }
 
-        hr.underline_week5 {
-            width: 74vw;
+        hr.exercise {
+            width: 100%;
         }
 
         div.assignment.week4 {
-            margin-top: 2%;
+            margin: auto;
+            width: 950px;
+            margin-bottom: 25px;
         }
 
-        p.exelinklink {
-            font-size: 1.5vw;
-            align-items: center;
-            justify-content: center;
+        p.exe_link {
+            color: rgb(79, 154, 80);
+            font-size: 24px;
             text-align: center;
+        }
+
+        a {
+            color: rgb(79, 154, 80);
+            text-decoration: none;
+        }
+
+        /* bar_under */
+
+        div.bar_under {
+            background-color: rgb(0, 95, 2);
+            padding: 3vw 2.5vw;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        div.header_under {
+            display: flex;
+            gap: 5px;
+            width: 100px;
+            align-items: center;
+            margin: auto;
+        }
+
+        div.arr {
+            color: white;
+            margin-top: 40px;
+            font-size: 12px;
+        }
+
+
+        @media screen and (max-width: 1280px) {
+            div.assignment_container {
+                display: block;
+            }
+
+            div.assignment {
+                margin: auto;
+                justify-content: center;
+                width: 310px;
+                margin-bottom: 20px;
+            }
+
+            div.assignment.week4 {
+                margin: auto;
+                width: 310px;
+                height: 215px;
+                margin-bottom: 25px;
+            }
+
+            p.introduct {
+                font-size: 15px;
+            }
         }
     </style>
 </head>
+
 
 <body>
     <div>
@@ -157,107 +209,104 @@
             <div class="logo">
                 <h1 class="logo">LOGO</h1>
             </div>
-
             <div class="header">
-                <div><a href="https://www.instagram.com/__.k4t?igsh=dDFraGt4dG1pMTl5&utm_source=qr" target="_blank">
-                        <img src="images/instagram.png" alt="Instagram" width="25"></a>
-
-                    <a href="https://www.facebook.com/katherine1126/" target="_blank">
-                        <img src="images/facebook.png" alt="Facebook" width="25"></a>
-
-                    <a href="https://www.tiktok.com/@kwanranghae._?_r=1&_t=ZS-94k4FryYAXH" target="_blank">
-                        <img src="images/tiktok.png" alt="TikTok" width="25"></a>
+                <div class="icon_logo_insta"><img src="Personal Page/images/instagram.png" alt="instagram" width="100%">
+                </div>
+                <div class="icon_logo_fb"><img src="Personal Page/images/facebook.png" alt="facebook" width="100%">
+                </div>
+                <div class="icon_logo_github"><img src="Personal Page/images/github.png" alt="github" width="100%">
                 </div>
             </div>
         </div>
 
-        <div class="intro">
-            <div class="user"><img class="user" src="images/user.png" alt="user" width="100%">
+
+        <div class="intro_context">
+            <div class="user"><img class="user" src="Personal Page/images/user.png" alt="Head" width="100%">
             </div>
             <div class="intro">
-                <h3 class="name intro1">Katherine Ang</h3>
-                <h4 class="subject intro1">Web Publishing</h4>
-                <p class="introduct intro1">Hii Im Katherine from DDM251. I like design and creative work. Music is
-                    one
-                    of my inspirations.</p>
+                <h3 class="intro_name">Katherine Ang</h3>
+                <h4 class="intro_subject">Web Publishing</h4>
+                <p class="intro_introduct">Hii Im Katherine from DDM251. I like design and creative work. Music is
+                    one of my inspirations.</p>
             </div>
-
         </div>
+
+
         <div class="assignment_container">
             <div class="assignment week1">
-                <div class="time">
-                    <div class="celendar"><img class="celendar" src="images/calendar.png" alt="celendar" width="100%">
-                    </div>
+                <div class="date">
+                    <div class="celendar"><img class="celendar" src="Personal Page/images/calendar.png" alt="celendar"
+                            width="100%"></div>
                     <div class="week"> Week 2</div>
 
                 </div>
                 <div class="exelink">
                     <hr>
-                    <p class="exelinklink"><a
-                            href="https://github.com/KatherineAng241043/katherineang.github.io/blob/0665ecc7901e2ef3a06b2ac7dfffe31ec3cb96a4/week1/exe1.html"></a>Exercise
-                        1</p>
-                    <p class="exelinklink"><a
-                            href="https://github.com/KatherineAng241043/katherineang.github.io/blob/0665ecc7901e2ef3a06b2ac7dfffe31ec3cb96a4/week1/exe2.html"></a>Exercise
-                        2</p>
-                    <span><br>ㅤ</span>
+                    <p class="exe_link"><a href="http://katherineang.github.io/week1/exe1.html">Exercise 1</a></p>
+                    <p class="exe_link"><a href="http://katherineang.github.io/week1/exe2.html">Exercise 2</a></p>
                 </div>
             </div>
 
+
             <div class="assignment week2">
-                <div class="time">
-                    <div class="celendar"><img class="celendar" src="images/calendar.png" alt="celendar" width="100%">
-                    </div>
+                <div class="date">
+                    <div class="celendar"><img class="celendar" src="Personal Page/images/calendar.png" alt="celendar"
+                            width="100%"></div>
                     <div class="week"> Week 3</div>
 
                 </div>
                 <div class="exelink">
                     <hr>
-                    <p class="exelinklink"><a
-                            href="https://github.com/KatherineAng241043/katherineang.github.io/blob/0665ecc7901e2ef3a06b2ac7dfffe31ec3cb96a4/week2/artist.html"></a>exercise
-                        1</p>
-                    <p class="exelinklink"><a
-                            href="https://github.com/KatherineAng241043/katherineang.github.io/blob/0665ecc7901e2ef3a06b2ac7dfffe31ec3cb96a4/week2/button.html"></a>exercise
-                        2</p>
-                    <p class="exelinklink"><a
-                            href="https://github.com/KatherineAng241043/katherineang.github.io/blob/0665ecc7901e2ef3a06b2ac7dfffe31ec3cb96a4/week2/self-intro.html"></a>exercise
-                        3</p>
+                    <p class="exe_link"><a href="http://katherineang.github.io/week2/artist.html">Exercise 1</a></p>
+                    <p class="exe_link"><a href="http://katherineang.github.io/week2/button.html">Exercise 2</a></p>
+                    <p class="exe_link"><a href="http://katherineang.github.io/week2/self-intro.html">Exercise 3</a>
+                    </p>
                 </div>
             </div>
 
+
             <div class="assignment week3">
-                <div class="time">
-                    <div class="celendar"><img class="celendar" src="images/calendar.png" alt="celendar" width="100%">
-                    </div>
+                <div class="date">
+                    <div class="celendar"><img class="celendar" src="Personal Page/images/calendar.png" alt="celendar"
+                            width="100%"></div>
                     <div class="week">Week 4</div>
                 </div>
                 <div class="exelink">
                     <hr>
-                    <p class="exelinklink"><a
-                            href="https://github.com/KatherineAng241043/katherineang.github.io/blob/0665ecc7901e2ef3a06b2ac7dfffe31ec3cb96a4/week3/flexbox1.html"></a>exercise
-                        1</p>
-                    <p class="exelinklink"><a
-                            href="https://github.com/KatherineAng241043/katherineang.github.io/blob/0665ecc7901e2ef3a06b2ac7dfffe31ec3cb96a4/week3/flexbox2.html"></a>exercise
-                        2</p>
-                    <span><br>ㅤ</span>
+                    <p class="exe_link"><a href="http://katherineang.github.io/week3/flexbox1.html">Exercise 1</a></p>
+                    <p class="exe_link"><a href="http://katherineang.github.io/week3/flexbox2.html">Exercise 2</a></p>
                 </div>
             </div>
-
         </div>
+
 
         <div class="assignment week4">
-            <div class="time">
-                <div class="celendar"><img class="celendar" src="images/calendar.png" alt="celendar" width="100%">
+            <div class="date">
+                <div class="celendar"><img class="celendar" src="Personal Page/images/calendar.png" alt="celendar"
+                        width="100%">
                 </div>
                 <div class="week">Week 5</div>
+
             </div>
             <div class="exelink">
-                <hr class="underline_week5">
-                <p class="exelinklink"><a
-                        href="https://github.com/KatherineAng241043/katherineang.github.io/blob/0665ecc7901e2ef3a06b2ac7dfffe31ec3cb96a4/week4/menu.html"></a>Exercise
-                    1</p>
+                <hr class="exercise">
+                <p class="exe_link"><a href="http://katherineang.github.io/week4/menu.html">Exercise 1</a></p>
+                <p class="exe_link"><a href="http://katherineang.github.io/week4/home.html">Exercise 2</a></p>
             </div>
         </div>
 
+
+        <div class="bar_under">
+            <div class="header_under">
+                <div class="icon_logo_insta"><img src="Personal Page/images/instagram.png" alt="instagram" width="100%">
+                </div>
+                <div class="icon_logo_fb"><img src="Personal Page/images/facebook.png" alt="facebook" width="100%">
+                </div>
+                <div class="icon_logo_github"><img src="Personal Page/images/github.png" alt="github" width="100%">
+                </div>
+            </div>
+            <div class="arr">@ 2026 Katherine Ang.All right reserved.</div>
+        </div>
     </div>
 
 </body>
