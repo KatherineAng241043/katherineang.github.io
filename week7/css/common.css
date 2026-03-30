@@ -42,7 +42,7 @@
 
  /* down */
 
- footer.footer_container {
+ .footer_container {
      background-color: #191A23;
      color: #ffffff;
      border-radius: 45px 45px 0 0;
@@ -67,15 +67,12 @@
      display: flex;
      align-items: center;
      gap: 8px;
+     font-size: 35px;
+     font-weight: bold;
  }
 
  .footer_logo img {
      width: 30px;
- }
-
- .footer_logo {
-     font-size: 35px;
-     font-weight: bold;
  }
 
  div.footer_menu {
@@ -193,6 +190,7 @@
 
      div.footer_logo {
          width: 200px;
+         margin: 0 auto;
      }
 
      footer.footer_container {
