@@ -6,35 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Page</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=VT323&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
 
         body {
-            background-image: url('Personal Page/images/city.jpg');
+            background-image: url('images/cat.png');
+            font-family: "Gaegu", sans-serif;
             margin: 0px;
-            font-family: "VT323", monospace;
         }
 
         /* bar */
 
-        div.bar {
-            background-color: rgb(0, 95, 2);
+        div.header {
+            background-color: #4b3d2b;
             display: flex;
             justify-content: space-between;
-            padding: 0px 2.5vw;
+            padding: 15px 50px;
         }
 
         h1.logo {
             color: #faebd7;
             font-size: 40px;
-            font-family: "Bebas Neue", sans-serif;
         }
 
-        div.header {
+        div.social_header {
             display: flex;
             justify-content: space-around;
-            gap: 0.5vw;
-            width: 100px;
             align-items: center;
+            gap: 10px;
+            width: 90px;
         }
 
         /* intro */
@@ -42,16 +41,14 @@
         div.intro_context {
             align-items: center;
             justify-content: center;
-            margin-top: 10px;
-            font-family: "Noto Serif", serif;
         }
 
         div.user {
-            width: 140px;
+            width: 170px;
             align-items: center;
             margin: auto;
             margin-top: 50px;
-            margin-bottom: -20px;
+            margin-bottom: -40px;
         }
 
         img.user {
@@ -66,34 +63,41 @@
         }
 
         h3.intro_name {
-            font-size: 40px;
+            font-size: 50px;
+            font-weight: 700;
         }
 
         h4.intro_subject {
             font-weight: 500;
             font-size: 25px;
-            margin-top: -30px;
+            margin-top: -40px;
         }
 
         p.intro_introduct {
-            font-size: 16px;
-            width: 50vw;
+            font-size: 20px;
+            font-weight: 300;
             text-align: center;
-            margin: auto;
-            line-height: 1.4;
+            line-height: 1.2;
             margin-top: -20px;
+            margin: auto;
         }
 
         /* assignment */
 
-        div.assignment_container {
+        div.row {
             display: flex;
             justify-content: center;
             margin: 20px 0px;
         }
 
-        div.assignment {
-            background-color: antiquewhite;
+        div.second_row {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0px;
+        }
+
+        div.asm {
+            background-color: #faebd7;
             border-radius: 10px;
             padding: 20px 30px;
             margin: 20px;
@@ -101,19 +105,19 @@
 
         div.date {
             display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
             gap: 5px;
             width: 250px;
-            margin: auto;
-            justify-content: center;
         }
 
         div.celendar {
-            width: 30px;
+            width: 20px;
         }
 
         div.week {
-            font-size: 40px;
-            width: 120px;
+            font-size: 30px;
         }
 
         div.exelink {
@@ -123,81 +127,72 @@
         }
 
         hr {
-            border: none;
-            border-top: 3px solid #ccc;
-            width: 100%;
-        }
-
-        hr.exercise {
-            width: 100%;
-        }
-
-        div.assignment.week4 {
-            margin: auto;
-            width: 950px;
-            margin-bottom: 25px;
+            border: 1px solid #4b3d2b;
+            opacity: 0.5;
         }
 
         p.exe_link {
-            color: rgb(79, 154, 80);
-            font-size: 24px;
+            color: #4b3d2b;
+            font-size: 22px;
             text-align: center;
         }
 
         a {
-            color: rgb(79, 154, 80);
+            color: #4b3d2b;
             text-decoration: none;
         }
+
+        a:hover {
+            color: rgb(109, 216, 216);
+            font-weight: bold;
+        }
+
 
         /* bar_under */
 
         div.bar_under {
-            background-color: rgb(0, 95, 2);
-            padding: 3vw 2.5vw;
-            justify-content: center;
-            align-items: center;
+            background-color: #4b3d2b;
             text-align: center;
             margin: auto;
+            padding: 40px;
             margin-top: 50px;
         }
 
-        div.header_under {
+        div.social_under {
             display: flex;
-            gap: 5px;
-            width: 100px;
             align-items: center;
             margin: auto;
+            gap: 10px;
+            width: 100px;
         }
 
         div.arr {
-            color: white;
-            margin-top: 40px;
-            font-size: 12px;
+            color: #faebd7;
+            font-size: 14px;
+            margin-top: 30px;
         }
 
 
         @media screen and (max-width: 1280px) {
-            div.assignment_container {
+            div.row {
                 display: block;
             }
 
-            div.assignment {
+            div.second_row {
+                display: block;
+            }
+
+            p.intro_introduct {
+                margin-top: -40px;
+                padding: 30px;
+            }
+
+            div.asm {
                 margin: auto;
-                justify-content: center;
-                width: 310px;
+                width: 350px;
                 margin-bottom: 20px;
             }
 
-            div.assignment.week4 {
-                margin: auto;
-                width: 310px;
-                height: 215px;
-                margin-bottom: 25px;
-            }
-
-            p.introduct {
-                font-size: 15px;
-            }
         }
     </style>
 </head>
@@ -205,23 +200,23 @@
 
 <body>
     <div>
-        <div class="bar">
+        <div class="header">
             <div class="logo">
                 <h1 class="logo">LOGO</h1>
             </div>
-            <div class="header">
-                <div class="icon_logo_insta"><img src="Personal Page/images/instagram.png" alt="instagram" width="100%">
+            <div class="social_header">
+                <div class="icon_logo_insta"><img src="images/instagram.png" alt="instagram" width="100%">
                 </div>
-                <div class="icon_logo_fb"><img src="Personal Page/images/facebook.png" alt="facebook" width="100%">
+                <div class="icon_logo_fb"><img src="images/facebook.png" alt="facebook" width="100%">
                 </div>
-                <div class="icon_logo_github"><img src="Personal Page/images/github.png" alt="github" width="100%">
+                <div class="icon_logo_github"><img src="images/github.png" alt="github" width="100%">
                 </div>
             </div>
         </div>
 
 
         <div class="intro_context">
-            <div class="user"><img class="user" src="Personal Page/images/user.png" alt="Head" width="100%">
+            <div class="user"><img class="user" src="images/me_photo.jpeg" alt="Head" width="100%">
             </div>
             <div class="intro">
                 <h3 class="intro_name">Katherine Ang</h3>
@@ -232,11 +227,11 @@
         </div>
 
 
-        <div class="assignment_container">
-            <div class="assignment week1">
+        <div class="row">
+            <div class="asm week1">
                 <div class="date">
-                    <div class="celendar"><img class="celendar" src="Personal Page/images/calendar.png" alt="celendar"
-                            width="100%"></div>
+                    <div class="celendar"><img class="celendar" src="images/calendar.png" alt="celendar" width="100%">
+                    </div>
                     <div class="week"> Week 2</div>
 
                 </div>
@@ -248,10 +243,10 @@
             </div>
 
 
-            <div class="assignment week2">
+            <div class="asm week2">
                 <div class="date">
-                    <div class="celendar"><img class="celendar" src="Personal Page/images/calendar.png" alt="celendar"
-                            width="100%"></div>
+                    <div class="celendar"><img class="celendar" src="images/calendar.png" alt="celendar" width="100%">
+                    </div>
                     <div class="week"> Week 3</div>
 
                 </div>
@@ -268,10 +263,10 @@
             </div>
 
 
-            <div class="assignment week3">
+            <div class="asm week3">
                 <div class="date">
-                    <div class="celendar"><img class="celendar" src="Personal Page/images/calendar.png" alt="celendar"
-                            width="100%"></div>
+                    <div class="celendar"><img class="celendar" src="images/calendar.png" alt="celendar" width="100%">
+                    </div>
                     <div class="week">Week 4</div>
                 </div>
                 <div class="exelink">
@@ -284,30 +279,44 @@
             </div>
         </div>
 
-
-        <div class="assignment week4">
-            <div class="date">
-                <div class="celendar"><img class="celendar" src="Personal Page/images/calendar.png" alt="celendar"
-                        width="100%">
+        <div class="second_row">
+            <div class="asm week4">
+                <div class="date">
+                    <div class="celendar"><img class="celendar" src="images/calendar.png" alt="celendar" width="100%">
+                    </div>
+                    <div class="week">Week 5</div>
                 </div>
-                <div class="week">Week 5</div>
-
+                <div class="exelink">
+                    <hr>
+                    <p class="exe_link"><a href="http://katherineang241043.github.io/week4/menu.html">Exercise 1</a></p>
+                    <p class="exe_link"><a href="http://katherineang241043.github.io/week4/home.html">Exercise 2</a></p>
+                </div>
             </div>
-            <div class="exelink">
-                <hr class="exercise">
-                <p class="exe_link"><a href="http://katherineang241043.github.io/week4/menu.html">Exercise 1</a></p>
-                <p class="exe_link"><a href="http://katherineang241043.github.io/week4/home.html">Exercise 2</a></p>
+
+            <div class="asm week5">
+                <div class="date">
+                    <div class="celendar"><img class="celendar" src="images/calendar.png" alt="celendar" width="100%">
+                    </div>
+                    <div class="week">Week 6</div>
+
+                </div>
+                <div class="exelink">
+                    <hr class="exercise">
+                    <p class="exe_link"><a href="http://katherineang241043.github.io/week7/casestudy.html">Exercise
+                            1</a>
+                    </p>
+                    <p class="exe_link"><a href="http://katherineang241043.github.io/week7/home.html">Exercise 2</a></p>
+                </div>
             </div>
         </div>
 
-
         <div class="bar_under">
-            <div class="header_under">
-                <div class="icon_logo_insta"><img src="Personal Page/images/instagram.png" alt="instagram" width="100%">
+            <div class="social_under">
+                <div class="icon_logo_insta"><img src="images/instagram.png" alt="instagram" width="100%">
                 </div>
-                <div class="icon_logo_fb"><img src="Personal Page/images/facebook.png" alt="facebook" width="100%">
+                <div class="icon_logo_fb"><img src="images/facebook.png" alt="facebook" width="100%">
                 </div>
-                <div class="icon_logo_github"><img src="Personal Page/images/github.png" alt="github" width="100%">
+                <div class="icon_logo_github"><img src="images/github.png" alt="github" width="100%">
                 </div>
             </div>
             <div class="arr">@ 2026 Katherine Ang.All right reserved.</div>
