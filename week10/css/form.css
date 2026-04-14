@@ -1,0 +1,30 @@
+.form-container {
+    margin: 30px;
+}
+
+.h2 {
+    font-weight: bold;
+}
+
+.user {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    width: 20%;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+}
+
+.input-box label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+    margin-left: 15px;
+}
+
+.input-box input {
+    padding: 10px 25px;
+    border: 1px solid #dcdcdc;
+    border-radius: 50px;
+    font-size: 16px;
+}
